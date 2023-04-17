@@ -9,8 +9,10 @@ export default function Layout(props) {
     <div className="Layout">
       <header>
         <Nav />
-        <Logo></Logo>
-        <CartLink />
+        <div>
+          <Logo></Logo>
+          <CartLink />
+        </div>
       </header>
       <aside>
         <CategoryList />
