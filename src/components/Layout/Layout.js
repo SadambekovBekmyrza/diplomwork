@@ -1,3 +1,4 @@
+import CartLink from "../CartLink/CartLink.js";
 import CategoryList from "../CategoryList/CategoryList.js";
 import Logo from "../Logo/Logo";
 import Nav from "../Nav/Nav";
@@ -9,6 +10,7 @@ export default function Layout(props) {
       <header>
         <Nav />
         <Logo></Logo>
+        <CartLink />
       </header>
       <aside>
         <CategoryList />
