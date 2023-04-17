@@ -1,1 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Alkatra:wght@500&display=swap");
+.CategoryList {
+  font-family: "Alkatra", cursive;
+  text-align: start;
+  font-size: 20px;
+}
 
+.CategoryList ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.CategoryList ul li div {
+  align-items: center;
+  display: flex;
+}
+
+.CategoryList ul li div a {
+  text-decoration: none;
+  color: rgb(179, 0, 0);
+  font-weight: 600;
+}
+
+.CategoryList .category-icon {
+  width: 40px;
+  height: 40px;
+}

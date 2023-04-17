@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Alkatra:wght@500&display=swap");
 .Nav {
   align-items: center;
   padding: 10px 50px;
@@ -17,6 +18,7 @@
   font-weight: 700;
   color: black;
   text-decoration: none;
+  font-family: "Alkatra", cursive;
 }
 
 .Nav ul li a:hover {
