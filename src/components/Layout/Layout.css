@@ -5,6 +5,7 @@
 body {
   margin: 0;
 }
+
 .Layout {
   display: grid;
   grid-template-areas:
@@ -12,7 +13,6 @@ body {
     "aside main"
     "footer footer";
   grid-template-columns: 1fr 3fr;
-  max-width: 790px;
   margin: 0 auto;
 }
 
