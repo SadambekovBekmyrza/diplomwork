@@ -18,6 +18,13 @@ body {
 
 .Layout header {
   grid-area: header;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.782);
+}
+
+.Layout header div {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 25px;
 }
 
 .Layout aside {
