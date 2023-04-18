@@ -1,9 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Alkatra:wght@500&display=swap");
 .Nav {
   align-items: center;
-  padding: 10px 50px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0);
-  box-shadow: 0 0 5px black;
+  padding: 10px 50px 0 50px;
 }
 
 .Nav ul {
