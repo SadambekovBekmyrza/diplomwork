@@ -1,3 +1,4 @@
+import Auth from "../Auth/Auth.js";
 import CartLink from "../CartLink/CartLink.js";
 import CategoryList from "../CategoryList/CategoryList.js";
 import Logo from "../Logo/Logo";
@@ -12,6 +13,7 @@ export default function Layout(props) {
         <div>
           <Logo></Logo>
           <CartLink />
+          <Auth />
         </div>
       </header>
       <aside>
