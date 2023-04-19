@@ -10,9 +10,14 @@ import AboutUs from "./pages/AboutUs";
 import Address from "./pages/Address";
 import { createContext, useEffect, useState } from "react";
 import { getDocs } from "firebase/firestore/lite";
-import { categoryCollection, productsCollection } from "./firebase";
+import {
+  categoryCollection,
+  onAuthChange,
+  productsCollection,
+} from "./firebase";
 import Product from "./pages/Product";
 import Cart from "./pages/Cart";
+import ThankYou from "./pages/ThankYou";
 
 export const AppContext = createContext({
   categories: [],
@@ -20,6 +25,8 @@ export const AppContext = createContext({
   // context corzina
   cart: {}, // soderjimoe corzinci
   setCart: () => {}, // izmenit soderjimoe corzinki
+
+  user: null,
 });
 
 function App() {
@@ -28,6 +35,8 @@ function App() {
   const [cart, setCart] = useState(() => {
     return JSON.parse(localStorage.getItem("cart")) || {};
   });
+
+  const [user, setUser] = useState(null);
 
   useEffect(() => {
     localStorage.setItem("cart", JSON.stringify(cart));
@@ -50,11 +59,17 @@ function App() {
         }))
       );
     });
+
+    onAuthChange((user) => {
+      setUser(user);
+    });
   }, []);
 
   return (
     <div className="App">
-      <AppContext.Provider value={{ categories, products, cart, setCart }}>
+      <AppContext.Provider
+        value={{ categories, products, cart, setCart, user }}
+      >
         <Layout>
           <Routes>
             <Route path="/" element={<Home />} />
@@ -66,6 +81,7 @@ function App() {
             <Route path="/address" element={<Address />} />
             <Route path="/categories/:slug" element={<Category />} />
             <Route path="/products/:slug" element={<Product />} />
+            <Route path="/thank-you" element={<ThankYou />} />
 
             <Route path="*" element={<NotFound />} />
           </Routes>
