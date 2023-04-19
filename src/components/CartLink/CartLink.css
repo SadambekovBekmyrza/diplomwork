@@ -14,10 +14,6 @@
 }
 
 .CartLink a:hover {
-  text-decoration: underline;
-  color: crimson;
-}
-
-.CartLink a img:hover {
-  display: none;
+  transform: translatey(4px);
+  transition: 0.2s;
 }
