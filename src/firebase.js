@@ -6,6 +6,7 @@ import {
   getAuth,
   onAuthStateChanged,
   signInWithPopup,
+  signOut,
 } from "firebase/auth";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
@@ -23,16 +24,13 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
+const auth = getAuth(app);
 
+// Получение списка категорий (коллекции документов)
 export const categoryCollection = collection(db, "categories");
 export const productsCollection = collection(db, "products");
 export const ordersCollection = collection(db, "orders");
-const auth = getAuth(app);
-// export const categoryCollection = collection(db, "categories");
-// export const productsCollection = collection(db, "products");
-
 const provider = new GoogleAuthProvider();
 export const signIn = () => signInWithPopup(auth, provider);
-export const signOut = () => signOut();
-
+export const signOff = () => signOut(auth);
 export const onAuthChange = (callback) => onAuthStateChanged(auth, callback);
