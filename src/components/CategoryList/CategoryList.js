@@ -7,7 +7,7 @@ export default function CategoryList() {
   const { categories } = useContext(AppContext);
 
   const output = categories.map((category) => (
-    <li key={category.id}>
+    <li key={category.id} className="nav-links">
       <div>
         <img
           src={category.icon}
@@ -22,7 +22,7 @@ export default function CategoryList() {
   return (
     <div className="CategoryList">
       <h3>Categories</h3>
-      <ul>{output}</ul>
+      <ul className="nav">{output}</ul>
     </div>
   );
 }

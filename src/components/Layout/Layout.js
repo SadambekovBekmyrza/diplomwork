@@ -17,10 +17,8 @@ export default function Layout(props) {
             <CartLink />
           </div>
         </div>
-      </header>
-      <aside>
         <CategoryList />
-      </aside>
+      </header>
       <main>{props.children}</main>
       <footer>FOOTER</footer>
     </div>

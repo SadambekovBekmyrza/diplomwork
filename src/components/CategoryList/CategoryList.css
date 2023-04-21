@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Alkatra:wght@500&display=swap");
 .CategoryList {
   font-family: "Alkatra", cursive;
-  text-align: start;
   font-size: 20px;
   background: linear-gradient(
     90deg,
@@ -12,15 +11,25 @@
     rgb(0, 136, 255),
     rgb(0, 106, 255)
   );
-  padding: 10px;
+  padding: 5px;
+  text-align: center;
+}
+
+.CategoryList h3 {
+  margin: 0;
 }
 
 .CategoryList ul {
   list-style-type: none;
-  padding-left: 10px;
+  margin: 0;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding-left: 0;
 }
 
 .CategoryList ul li {
+  width: 206px;
   margin: 5px 0;
   display: flex;
   justify-content: space-between;
@@ -29,28 +38,39 @@
 .CategoryList ul li div {
   align-items: center;
   display: flex;
+  padding: 0 4px;
 }
 
 .CategoryList ul li div a {
   text-decoration: none;
   color: rgb(220, 20, 43);
   font-weight: 600;
-  padding: 0 10px;
+  padding: 0 6px;
 }
 
 .CategoryList ul li div:hover {
-  transform: translate(4px);
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.92);
+  transform: translateY(-3px);
   border-radius: 10px;
-  transition: 0.3s;
-  padding-left: 2px;
+  transition: 0.2s;
+  box-shadow: 0 6px 2px #000000;
+  background-color: #00000015;
+  cursor: pointer;
 }
 
 .CategoryList ul li div a:hover {
   color: black;
+  cursor: pointer;
 }
 
 .CategoryList .category-icon {
   width: 30px;
   height: 30px;
+}
+
+.CategoryList ul li div:active {
+  transform: translateY(3px);
+  border-radius: 10px;
+  transition: 0.2s;
+  box-shadow: none;
+  background-color: #00000015;
 }

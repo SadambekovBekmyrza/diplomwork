@@ -6,21 +6,6 @@ body {
   margin: 0;
 }
 
-.Layout {
-  display: grid;
-  grid-template-areas:
-    "header header"
-    "aside main"
-    "footer footer";
-  grid-template-columns: 1fr 3fr;
-  margin: 0 auto;
-}
-
-.Layout header {
-  grid-area: header;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.782);
-}
-
 .Layout header .header-bottom {
   display: flex;
   justify-content: space-between;
@@ -31,16 +16,4 @@ body {
   display: flex;
   margin-right: 12px;
   justify-content: space-between;
-}
-
-.Layout aside {
-  grid-area: aside;
-}
-
-.Layout main {
-  grid-area: main;
-}
-
-.Layout footer {
-  grid-area: footer;
 }
