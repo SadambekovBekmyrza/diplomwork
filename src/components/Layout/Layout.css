@@ -9,11 +9,21 @@ body {
 .Layout header .header-bottom {
   display: flex;
   justify-content: space-between;
-  padding-right: 25px;
+  padding: 0 40px 10px 40px;
+  align-items: center;
+  margin-top: 15px;
 }
 
 .Layout header .header-bottom div {
   display: flex;
-  margin-right: 12px;
   justify-content: space-between;
+  align-items: center;
+}
+
+.Layout header nav {
+  margin-bottom: 5px;
+}
+
+.Layout header {
+  background-color: #f6f6f6;
 }
