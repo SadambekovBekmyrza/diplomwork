@@ -1,6 +1,6 @@
 import { useMatch } from "react-router";
 import NotFound from "./NotFound";
-
+import "./pages.css";
 import ProductList from "../components/ProductList/ProductList";
 import { useContext } from "react";
 import { AppContext } from "../App";

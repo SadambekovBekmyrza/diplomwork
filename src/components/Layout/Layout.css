@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
 * {
   box-sizing: border-box;
 }
@@ -25,13 +26,11 @@ body {
 }
 
 .Layout header {
-  background: linear-gradient(
-    45deg,
-    #a6a6a680,
-    white,
-    #80808060,
-    white,
-    #70707050,
-    white
-  );
+  background-image: url(../../assets/fon-header.avif);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.Layout main {
+  font-family: "Rubik", sans-serif;
 }

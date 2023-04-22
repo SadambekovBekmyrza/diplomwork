@@ -2,15 +2,9 @@
 .CategoryList {
   font-family: "Alkatra", cursive;
   font-size: 20px;
-  background: linear-gradient(
-    45deg,
-    cyan,
-    rgb(0, 221, 255),
-    rgb(70, 200, 255),
-    rgb(0, 153, 255),
-    rgb(0, 136, 255),
-    rgb(0, 106, 255)
-  );
+  background-image: url(../../assets/category-fon.jfif);
+  background-repeat: no-repeat;
+  background-size: 100%;
   padding: 5px;
   text-align: center;
 }
@@ -44,7 +38,7 @@
 
 .CategoryList ul li div a {
   text-decoration: none;
-  color: rgb(220, 20, 43);
+  color: rgb(0, 150, 0);
   font-weight: 600;
   padding: 0 6px;
 }

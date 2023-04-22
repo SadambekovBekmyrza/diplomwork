@@ -1,0 +1,9 @@
+.Category h1 {
+  text-align: center;
+  margin: 0;
+}
+
+.Category {
+  padding: 20px 50px;
+  background-color: tomato;
+}
