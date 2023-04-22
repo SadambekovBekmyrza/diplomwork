@@ -25,5 +25,13 @@ body {
 }
 
 .Layout header {
-  background-color: #f6f6f6;
+  background: linear-gradient(
+    45deg,
+    #a6a6a680,
+    white,
+    #80808060,
+    white,
+    #70707050,
+    white
+  );
 }
