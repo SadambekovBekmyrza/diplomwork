@@ -17,6 +17,7 @@
 
 .CategoryList h3 {
   margin: 0;
+  letter-spacing: 1px;
 }
 
 .CategoryList ul {
@@ -53,7 +54,7 @@
   border-radius: 10px;
   transition: 0.2s;
   box-shadow: 0 6px 2px #000000;
-  background-color: #00000015;
+  background-color: #00000020;
   cursor: pointer;
 }
 
@@ -72,5 +73,5 @@
   border-radius: 10px;
   transition: 0.2s;
   box-shadow: none;
-  background-color: #00000015;
+  background-color: #00000020;
 }
