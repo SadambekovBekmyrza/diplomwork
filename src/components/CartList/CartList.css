@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+
+.CartList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.CartList .CartItem {
+  border: 3px solid black;
+  box-shadow: 6px 6px 0 #000000;
+  width: 32%;
+  padding: 10px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 10px;
+  background-color: tomato;
+}
+
+.CartList .CartItem .name {
+  margin: 0 auto;
+}
+
+.CartList .CartItem a {
+  box-shadow: 0 6px 1px #000000;
+  padding: 5px 10px;
+  border-radius: 15px;
+  outline: none;
+  border: 1px solid black;
+  font-family: "Rubik", sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+  color: #000000;
+  background-color: lime;
+}
+
+.CartList .CartItem img {
+  width: 100%;
+  height: 75%;
+  border-radius: 10px;
+}
+
+.CartList .CartItem div {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+.CartList .CartItem div span {
+  background-color: cornflowerblue;
+  box-shadow: 0 6px 1px #000000;
+  padding: 5px 10px;
+  border-radius: 15px;
+  outline: none;
+  border: none;
+  font-family: "Rubik", sans-serif;
+  font-weight: 600;
+}
+
+.CartList .CartItem div input {
+  background-color: cyan;
+  box-shadow: 0 6px 1px #000000;
+  padding: 5px 10px;
+  border-radius: 15px;
+  outline: none;
+  border: 1px solid black;
+  font-family: "Rubik", sans-serif;
+  font-weight: 600;
+  max-width: 100%;
+}
+
+.CartList .CartItem div img {
+  width: 30px;
+  height: 35px;
+}

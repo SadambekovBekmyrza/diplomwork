@@ -5,5 +5,29 @@
 
 .Category {
   padding: 20px 50px;
-  background-color: tomato;
+  background: linear-gradient(
+    45deg,
+    #cdcdcd,
+    #bbbbbb,
+    #aeaeae,
+    #cdcdcd,
+    #bbbbbb
+  );
+}
+
+.Cart h1 {
+  text-align: center;
+  margin: 0;
+}
+
+.Cart {
+  padding: 20px 50px;
+  background: linear-gradient(
+    45deg,
+    #cdcdcd,
+    #bbbbbb,
+    #aeaeae,
+    #cdcdcd,
+    #bbbbbb
+  );
 }

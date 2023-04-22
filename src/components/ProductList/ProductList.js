@@ -14,8 +14,8 @@ export default function ProductList({ category }) {
         <div className="product-content">
           <NavLink to={"/products/" + product.slug}>{product.name}</NavLink>
           <span>{product.price} som</span>
-          <AddToCart product={product} />
         </div>
+        <AddToCart product={product} />
       </div>
     ));
   return <div className="ProductList">{output}</div>;
