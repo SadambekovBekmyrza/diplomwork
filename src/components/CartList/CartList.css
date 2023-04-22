@@ -77,3 +77,16 @@
   width: 30px;
   height: 35px;
 }
+
+.CartList .CartItem .name a:hover {
+  box-shadow: 0 3px 1px black;
+  color: red;
+  text-decoration: underline;
+  transform: translateY(2px);
+}
+
+.CartList .CartItem .name a:active {
+  box-shadow: none;
+  border: none;
+  transform: translateY(4px);
+}

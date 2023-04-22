@@ -1,8 +1,8 @@
 import { useContext } from "react";
 import "./CartList.css";
 import { AppContext } from "../../App";
-import { Link } from "react-router-dom";
 import Logo from "../../assets/delete-icon.jpg";
+import { NavLink } from "react-router-dom";
 
 export default function CartList() {
   const { products, cart, setCart } = useContext(AppContext);
@@ -26,7 +26,7 @@ export default function CartList() {
     .map((product) => (
       <div className="CartItem" key={product.id}>
         <div className="name">
-          <Link to={"/product/" + product.slug}>{product.name}</Link>
+          <NavLink to={"/products/" + product.slug}>{product.name}</NavLink>
         </div>
         <img src={product.picture} alt={product.name} />
         <div>
