@@ -16,3 +16,11 @@ code {
 * {
   box-sizing: border-box;
 }
+
+body ul {
+  list-style-type: none;
+}
+
+body a {
+  text-decoration: none;
+}

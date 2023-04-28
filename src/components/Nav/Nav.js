@@ -2,9 +2,16 @@ import { NavLink } from "react-router-dom";
 import "./Nav.css";
 
 export default function Nav() {
+  let toggleMenu = document.querySelector(".toggleMenu");
+  let navigation = document.querySelector(".navigation");
+
+  toggleMenu.onclick = function () {
+    navigation.classList.toggle("active");
+  };
+
   return (
     <nav className="Nav">
-      <ul>
+      <ul className="navigation">
         <li className="NavItem">
           <NavLink to="/">Home</NavLink>
         </li>
@@ -23,6 +30,7 @@ export default function Nav() {
         <li className="NavItem">
           <NavLink to="/address">Address</NavLink>
         </li>
+        <span className="toggleMenu"></span>
       </ul>
     </nav>
   );
