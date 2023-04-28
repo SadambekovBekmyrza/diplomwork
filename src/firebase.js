@@ -1,4 +1,4 @@
-import { collection, getFirestore } from "firebase/firestore/lite";
+import { collection, getFirestore, onSnapshot } from "firebase/firestore";
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import {
@@ -34,3 +34,13 @@ const provider = new GoogleAuthProvider();
 export const logIn = () => signInWithPopup(auth, provider);
 export const logOut = () => signOut(auth);
 export const onAuthChange = (callback) => onAuthStateChanged(auth, callback);
+
+export const onCategoriesLoad = (callback) =>
+  onSnapshot(categoryCollection, (snapshot) =>
+    callback(
+      snapshot.docs.map((doc) => ({
+        id: doc.id,
+        ...doc.data(),
+      }))
+    )
+  );

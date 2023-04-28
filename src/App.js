@@ -9,10 +9,10 @@ import Payment from "./pages/Payment";
 import AboutUs from "./pages/AboutUs";
 import Address from "./pages/Address";
 import { createContext, useEffect, useState } from "react";
-import { getDocs } from "firebase/firestore/lite";
+import { getDocs } from "firebase/firestore";
 import {
-  categoryCollection,
   onAuthChange,
+  onCategoriesLoad,
   ordersCollection,
   productsCollection,
 } from "./firebase";
@@ -48,14 +48,15 @@ function App() {
   }, [cart]);
 
   useEffect(() => {
-    getDocs(categoryCollection).then(({ docs }) => {
-      setCategories(
-        docs.map((doc) => ({
-          ...doc.data(),
-          id: doc.id,
-        }))
-      );
-    });
+    onCategoriesLoad(setCategories);
+    // getDocs(categoryCollection).then(({ docs }) => {
+    //   setCategories(
+    //     docs.map((doc) => ({
+    //       ...doc.data(),
+    //       id: doc.id,
+    //     }))
+    //   );
+    // });
     getDocs(productsCollection).then(({ docs }) => {
       setProducts(
         docs.map((doc) => ({
@@ -74,6 +75,9 @@ function App() {
     });
 
     onAuthChange((user) => {
+      if (user) {
+        user.isAdmin = user.email === "bekavlad2005@gmail.com";
+      }
       setUser(user);
     });
   }, []);
