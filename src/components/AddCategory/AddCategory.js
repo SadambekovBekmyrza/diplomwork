@@ -18,7 +18,7 @@ const AddCategory = () => {
   function onAddCategory() {
     const name = category.trim();
 
-    if (name.length < 15) {
+    if (name.length > 15) {
       alert(
         "Please provide a category name with minimum length of 15 characters"
       );
@@ -26,7 +26,7 @@ const AddCategory = () => {
     }
     addDoc(categoryCollection, {
       name: category.trim(),
-      slug: category.trim().replace("", "-").toLocaleLowerCase(),
+      slug: category.trim().replaceAll(" ", "-").toLocaleLowerCase(),
     });
   }
 

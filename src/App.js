@@ -9,12 +9,11 @@ import Payment from "./pages/Payment";
 import AboutUs from "./pages/AboutUs";
 import Address from "./pages/Address";
 import { createContext, useEffect, useState } from "react";
-import { getDocs } from "firebase/firestore";
 import {
   onAuthChange,
   onCategoriesLoad,
-  ordersCollection,
-  productsCollection,
+  onOredrsLoad,
+  onProductsLoad,
 } from "./firebase";
 import Product from "./pages/Product";
 import Cart from "./pages/Cart";
@@ -57,22 +56,24 @@ function App() {
     //     }))
     //   );
     // });
-    getDocs(productsCollection).then(({ docs }) => {
-      setProducts(
-        docs.map((doc) => ({
-          ...doc.data(),
-          id: doc.id,
-        }))
-      );
-    });
-    getDocs(ordersCollection).then(({ docs }) => {
-      setOrders(
-        docs.map((doc) => ({
-          ...doc.data(),
-          id: doc.id,
-        }))
-      );
-    });
+    onProductsLoad(setProducts);
+    // getDocs(productsCollection).then(({ docs }) => {
+    //   setProducts(
+    //     docs.map((doc) => ({
+    //       ...doc.data(),
+    //       id: doc.id,
+    //     }))
+    //   );
+    // });
+    onOredrsLoad(setOrders);
+    // getDocs(ordersCollection).then(({ docs }) => {
+    //   setOrders(
+    //     docs.map((doc) => ({
+    //       ...doc.data(),
+    //       id: doc.id,
+    //     }))
+    //   );
+    // });
 
     onAuthChange((user) => {
       if (user) {
