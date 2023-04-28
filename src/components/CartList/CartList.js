@@ -1,7 +1,6 @@
 import { useContext } from "react";
 import "./CartList.css";
 import { AppContext } from "../../App";
-import Logo from "../../assets/delete-icon.jpg";
 import { NavLink } from "react-router-dom";
 
 export default function CartList() {
@@ -37,7 +36,11 @@ export default function CartList() {
             min={1}
             onChange={(event) => onQuantityChange(product, +event.target.value)}
           />
-          <img onClick={() => onItemRemove(product)} src={Logo} alt="delete" />
+          <img
+            onClick={() => onItemRemove(product)}
+            src="https://blabla"
+            alt="delete"
+          />
         </div>
       </div>
     ));
