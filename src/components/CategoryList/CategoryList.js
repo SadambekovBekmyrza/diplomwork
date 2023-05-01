@@ -25,16 +25,16 @@ export default function CategoryList() {
 
   return (
     <div className="CategoryList">
-      <button className="menu">CATEGORIES</button>
-      <div className="fon-category">
-        <div className="border-bottom">
+      <NavLink className="menu">
+        CATEGORIES
+        <div className="fon-category">
           <div className="fon">
             <h1>CATEGORIES</h1>
             <ul className="nav">{output}</ul>
             <AddCategory />
           </div>
         </div>
-      </div>
+      </NavLink>
     </div>
   );
 }
