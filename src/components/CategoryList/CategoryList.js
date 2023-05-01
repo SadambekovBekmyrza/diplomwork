@@ -22,11 +22,6 @@ export default function CategoryList() {
       <DeleteCategory category={category} />
     </li>
   ));
-  let menuBtn = document.querySelector(".menu");
-  let category = document.querySelector(".fon-category");
-  menuBtn.onclick = function () {
-    category.classList.toggle("active");
-  };
 
   return (
     <div className="CategoryList">
