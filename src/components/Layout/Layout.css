@@ -1,0 +1,11 @@
+.Layout header {
+  background-image: url(../../assets/fon-nav.png);
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position: cover;
+}
+
+.Layout header .header-bottom {
+  display: flex;
+  justify-content: space-between;
+}

@@ -12,13 +12,13 @@ export default function Layout(props) {
         <Nav />
         <div className="header-bottom">
           <Logo></Logo>
-          <div>
-            <Auth />
-            <CartLink />
-          </div>
+          <Auth />
+          <CartLink />
         </div>
-        <CategoryList />
       </header>
+      <aside>
+        <CategoryList />
+      </aside>
       <main>{props.children}</main>
       <footer>FOOTER</footer>
     </div>
