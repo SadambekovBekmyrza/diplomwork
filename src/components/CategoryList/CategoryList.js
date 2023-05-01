@@ -19,16 +19,27 @@ export default function CategoryList() {
         <NavLink to={`/categories/${category.slug}`}>{category.name}</NavLink>
       </div>
       <DeleteCategory category={category} />
+      <DeleteCategory category={category} />
     </li>
   ));
+  let menuBtn = document.querySelector(".menu");
+  let category = document.querySelector(".fon-category");
+  menuBtn.onclick = function () {
+    category.classList.toggle("active");
+  };
 
   return (
     <div className="CategoryList">
-      <div>
-        <h3>CATEGORIES</h3>
+      <button className="menu">CATEGORIES</button>
+      <div className="fon-category">
+        <div className="border-bottom">
+          <div className="fon">
+            <h1>CATEGORIES</h1>
+            <ul className="nav">{output}</ul>
+            <AddCategory />
+          </div>
+        </div>
       </div>
-      <ul className="nav">{output}</ul>
-      <AddCategory />
     </div>
   );
 }

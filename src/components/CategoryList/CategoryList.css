@@ -1,4 +1,92 @@
-.nav-links div img {
-  width: 10px;
-  height: 10px;
+.nav-links img {
+  width: 30px;
+  height: 30px;
+}
+
+.fon-category {
+  display: none;
+  margin: 10px 0;
+  border-radius: 20% 80% 20% 80% / 90% 25% 75% 10%;
+  background: linear-gradient(
+    45deg,
+    #ffffff70,
+    #ffffff60,
+    #ffffff50,
+    #ffffff40,
+    #ffffff30,
+    #ffffff20,
+    #ffffff10
+  );
+}
+
+.fon-category h1 {
+  padding: 10px 0;
+  text-align: center;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.fon-category .nav {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  justify-content: center;
+}
+
+.fon-category .nav .nav-links {
+  width: 280px;
+  padding: 10px 20px;
+  align-items: center;
+}
+
+.fon-category .nav .nav-links a {
+  padding: 10px 20px;
+  font-weight: 400;
+  color: white;
+  padding-left: 5px;
+}
+
+.fon-category .nav .nav-links div {
+  align-items: center;
+  display: flex;
+}
+
+.fon-category .fon {
+  background: linear-gradient(
+    180deg,
+    #1bfa88,
+    #1bfa87eb,
+    #1bfa87cc,
+    #1bfa87c3,
+    #1bfa8794,
+    #1bfa8750,
+    #1bfa8730
+  );
+  border-radius: 75% 25% 90% 10% / 40% 100% 0% 60%;
+  box-shadow: 5px -5px 15px #ffffff95;
+}
+
+.CategoryList .fon-category.active {
+  display: flex;
+}
+
+.CategoryList .menu {
+  border: none;
+  color: black;
+  font-size: 18px;
+  font-weight: 700;
+  background-color: #1bfa88;
+  width: 100%;
+  padding: 5px 0;
+}
+
+.CategoryList .fon-category.active .border-bottom {
+  border-bottom: 30px solid #1bfa88;
+  width: 100%;
+}
+
+.fon-category .nav .nav-links a:hover {
+  color: black;
+  text-decoration: underline;
+  font-weight: 600;
 }
