@@ -2,7 +2,7 @@ import { Route, Routes } from "react-router-dom";
 import Layout from "./components/Layout/Layout";
 import Home from "./pages/Home";
 import Contacts from "./pages/Contacts";
-import Devilery from "./pages/Delivery";
+import Delivery from "./pages/Delivery";
 import Category from "./pages/Category";
 import NotFound from "./pages/NotFound";
 import Payment from "./pages/Payment";
@@ -19,6 +19,7 @@ import Product from "./pages/Product";
 import Cart from "./pages/Cart";
 import ThankYou from "./pages/ThankYou";
 import Orders from "./pages/Orders";
+import CategoryListLink from "./pages/CategoryListLink";
 
 export const AppContext = createContext({
   categories: [],
@@ -94,13 +95,14 @@ function App() {
             <Route path="/cart" element={<Cart />} />
             <Route path="/payment" element={<Payment />} />
             <Route path="/contacts" element={<Contacts />} />
-            <Route path="/delivery" element={<Devilery />} />
+            <Route path="/delivery" element={<Delivery />} />
             <Route path="/about" element={<AboutUs />} />
             <Route path="/address" element={<Address />} />
             <Route path="/categories/:slug" element={<Category />} />
             <Route path="/products/:slug" element={<Product />} />
             <Route path="/thank-you" element={<ThankYou />} />
             <Route path="/orders" element={<Orders />} />
+            <Route path="/category-list" element={<CategoryListLink />} />
 
             <Route path="*" element={<NotFound />} />
           </Routes>
