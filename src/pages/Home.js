@@ -1,9 +1,24 @@
 export default function Home() {
   return (
     <div className="Home">
-      <h1>Home</h1>
-      <p>This is my home-page</p>
-      <p>The crested honey buzzard (Pernis ptilorhynchus), also known as the Oriental honey buzzard, is a bird of prey in the family Accipitridae. Its size ranges from 57 to 60 centimetres (22 to 24 in). The name is derived from its diet, which consists mainly of the larvae of bees and wasps, extracted from honeycombs. It has several adaptations for this diet, including an elongated head for foraging on underground nests and a groove in the tongue for feeding on honey. A mass of short, dense feathers on the head and neck protect against stinging attacks by social wasps. The crested honey buzzard is a year-round resident in Southeast Asia and the Indian subcontinent. Some birds migrate to Siberia and Japan during the summer for breeding. This crested honey buzzard was photographed in Mudumalai National Park, India.</p>
+      <h1>Welcome to our online puzzle store!</h1>
+      <p>
+        We offer a wide variety of puzzles for all ages and skill levels. From
+        jigsaw puzzles to brain teasers, we have something for everyone. Our
+        collection includes classic puzzles, such as Rubik's Cube and Sudoku, as
+        well as innovative and unique puzzles that will challenge and entertain
+        you for hours We pride ourselves on offering high-quality puzzles from
+        trusted brands, and our selection is constantly updated with the latest
+        and greatest puzzle releases.
+      </p>
+      <p>
+        Whether you're looking for a solo challenge or a fun family activity,
+        you'll find it here. We have puzzles in all shapes and sizes, from small
+        travel puzzles to giant floor puzzles. In addition to our puzzles, we
+        also offer puzzle accessories and storage solutions to help you keep
+        your puzzle collection organized and in top condition. So why wait?
+        Start exploring our selection today and find your next favorite puzzle!
+      </p>
     </div>
   );
 }
