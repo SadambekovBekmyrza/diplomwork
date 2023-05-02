@@ -8,4 +8,5 @@
 .Layout header .header-bottom {
   display: flex;
   justify-content: space-between;
+  padding: 0 35px;
 }
