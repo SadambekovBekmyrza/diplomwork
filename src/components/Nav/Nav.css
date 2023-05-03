@@ -38,5 +38,5 @@
     5px 10px 10px #00000010, inset -20px -20px 25px #ffffff50;
   text-decoration: underline;
   border-radius: 50% 50% 95% 5% / 80% 100% 0% 20%;
-  border-bottom-right-radius: 5px;
+  border-bottom-right-radius: 6px;
 }
