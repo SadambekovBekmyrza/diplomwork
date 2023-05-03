@@ -21,9 +21,7 @@
 .fon-category h1 {
   padding: 10px 0;
   text-align: center;
-  font-weight: 700;
-  font-size: 24px;
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 .fon-category .nav {
@@ -41,7 +39,6 @@
 
 .fon-category .nav .nav-links a {
   padding: 10px;
-  font-weight: 400;
   color: white;
   transition: 0.2s;
 }
@@ -58,19 +55,16 @@
     #1bfa87eb,
     #1bfa87cc,
     #1bfa87c3,
-    #1bfa8794,
-    #1bfa8794,
     #1bfa87c3,
     #1bfa87cc,
     #1bfa87eb
   );
-  border-radius: 75% 25% 90% 10% / 40% 100% 0% 60%;
+  border-radius: 80% 20% 90% 10% / 30% 95% 5% 70%;
   box-shadow: 3px -3px 20px #ffffff70;
 }
 
 .fon-category .nav .nav-links a:hover {
   color: black;
   text-decoration: underline;
-  font-weight: 600;
   transform: scale(1.1);
 }
