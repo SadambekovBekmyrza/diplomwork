@@ -1,0 +1,13 @@
+.CartLink a img {
+  width: 55px;
+}
+
+.CartLink a {
+  display: flex;
+  flex-direction: column;
+}
+
+.CartLink a h6 {
+  color: #40ff99;
+  font-weight: 500;
+}
