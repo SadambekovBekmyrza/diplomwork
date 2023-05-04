@@ -13,7 +13,7 @@ export default function CartLink() {
     <div className="CartLink">
       <NavLink to="/cart">
         <img src={CartIcon} alt="cart-logo" />
-        <h6>CART({total})</h6>
+        <span>({total})</span>
       </NavLink>
     </div>
   );

@@ -1,3 +1,12 @@
 .CartLink a img {
-  width: 100px;
+  width: 105px;
+}
+
+.CartLink a {
+  display: flex;
+  align-items: center;
+}
+
+.CartLink a span {
+  color: #0095ff;
 }

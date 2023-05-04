@@ -2,12 +2,9 @@ import { Route, Routes } from "react-router-dom";
 import Layout from "./components/Layout/Layout";
 import Home from "./pages/Home";
 import Contacts from "./pages/Contacts";
-import Delivery from "./pages/Delivery";
 import Category from "./pages/Category";
 import NotFound from "./pages/NotFound";
-import Payment from "./pages/Payment";
 import AboutUs from "./pages/AboutUs";
-import Address from "./pages/Address";
 import { createContext, useEffect, useState } from "react";
 import {
   onAuthChange,
@@ -20,6 +17,7 @@ import Cart from "./pages/Cart";
 import ThankYou from "./pages/ThankYou";
 import Orders from "./pages/Orders";
 import CategoryListLink from "./pages/CategoryListLink";
+import DeliveryPayment from "./pages/DeliveryPayment";
 
 export const AppContext = createContext({
   categories: [],
@@ -93,11 +91,9 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/cart" element={<Cart />} />
-            <Route path="/payment" element={<Payment />} />
             <Route path="/contacts" element={<Contacts />} />
-            <Route path="/delivery" element={<Delivery />} />
+            <Route path="/delivery-payment" element={<DeliveryPayment />} />
             <Route path="/about" element={<AboutUs />} />
-            <Route path="/address" element={<Address />} />
             <Route path="/categories/:slug" element={<Category />} />
             <Route path="/products/:slug" element={<Product />} />
             <Route path="/thank-you" element={<ThankYou />} />
