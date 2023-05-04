@@ -1,8 +1,8 @@
-export default function Delivery() {
+export default function DeliveryPayment() {
   return (
-    <div className="Delivery">
-      <h1>Delivery</h1>
-      <p>This is my Delivery-page</p>
+    <div className="DeliveryPayment">
+      <h1>Delivery_Payment</h1>
+      <p>This is my Delivery_Payment-page</p>
       <p>
         The crested honey buzzard (Pernis ptilorhynchus), also known as the
         Oriental honey buzzard, is a bird of prey in the family Accipitridae.
