@@ -36,11 +36,7 @@ export default function CartList() {
             min={1}
             onChange={(event) => onQuantityChange(product, +event.target.value)}
           />
-          <img
-            onClick={() => onItemRemove(product)}
-            src="https://blabla"
-            alt="delete"
-          />
+          <img onClick={() => onItemRemove(product)} src="" alt="delete" />
         </div>
       </div>
     ));
