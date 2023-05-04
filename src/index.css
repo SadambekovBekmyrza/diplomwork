@@ -7,7 +7,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   min-height: 110vh;
-  background: linear-gradient(135deg, #100849, #000066, #130744);
+  background-color: rgb(30, 30, 30);
+  font-size: 18px;
 }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
@@ -15,7 +16,7 @@ code {
 }
 
 * {
-  color: white;
+  color: rgb(215, 215, 215);
   box-sizing: border-box;
   font-weight: 500;
   font-family: "Nunito", sans-serif;
