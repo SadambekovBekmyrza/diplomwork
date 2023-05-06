@@ -1,13 +1,11 @@
 import { NavLink } from "react-router-dom";
-import CartLink from "../CartLink/CartLink.js";
-import Logo from "../Logo/Logo";
+import Auth from "../Auth/Auth.js";
 import "./Nav.css";
 
 export default function Nav() {
   return (
     <nav className="Nav">
       <ul className="nav-list">
-        <Logo />
         <li>
           <NavLink to="/">Home</NavLink>
         </li>
@@ -20,7 +18,10 @@ export default function Nav() {
         <li>
           <NavLink to="/delivery-payment">Delivery_Payment</NavLink>
         </li>
-        <CartLink />
+        <li>
+          <NavLink to="/category-list">Categories</NavLink>
+        </li>
+        <Auth />
       </ul>
     </nav>
   );

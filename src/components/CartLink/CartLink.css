@@ -1,5 +1,5 @@
 .CartLink a img {
-  width: 105px;
+  width: 110px;
 }
 
 .CartLink a {
@@ -9,4 +9,5 @@
 
 .CartLink a span {
   color: #0095ff;
+  font-size: 19px;
 }

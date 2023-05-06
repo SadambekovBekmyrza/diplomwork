@@ -1,0 +1,14 @@
+.Auth span a {
+  text-transform: uppercase;
+  color: #dddddd;
+  margin-right: 5px;
+}
+
+.Auth span a:focus {
+  color: #fa1240;
+}
+
+.Auth span a:hover {
+  color: #1e9eff;
+  text-decoration: underline;
+}
