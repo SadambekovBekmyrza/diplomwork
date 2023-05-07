@@ -36,3 +36,11 @@
     transform: rotate(-6deg);
   }
 }
+
+.NotFound {
+  padding: 10px 35px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #353535;
+  color: #009dff;
+}
