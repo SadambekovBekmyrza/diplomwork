@@ -1,4 +1,5 @@
 import { collection, getFirestore, onSnapshot } from "firebase/firestore";
+import { getStorage, ref, uploadBytes, getDownloadURL } from "firebase/storage";
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import {
@@ -64,3 +65,12 @@ export const onOredrsLoad = (callback) =>
       }))
     )
   );
+
+export const uploadProductPhoto = async (file) => {
+  const storageRef = ref(storage, `products/${file.name}`);
+  await uploadBytes(storageRef, file);
+
+  const url = await getDownloadURL(storageRef);
+  return url;
+};
+export const storage = getStorage(app);
