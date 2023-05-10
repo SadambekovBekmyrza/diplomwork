@@ -8,6 +8,7 @@
 .Nav .nav-list li a {
   text-transform: uppercase;
   color: #dddddd;
+  transition: 0.3s;
 }
 
 .Nav .nav-list li a:focus {

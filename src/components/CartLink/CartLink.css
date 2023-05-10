@@ -1,5 +1,7 @@
 .CartLink a img {
   width: 110px;
+  filter: drop-shadow(1px 2px 0 #ffffff80);
+  transition: 0.1s;
 }
 
 .CartLink a {
@@ -10,4 +12,12 @@
 .CartLink a span {
   color: #0095ff;
   font-size: 19px;
+}
+
+.CartLink a img:hover {
+  filter: drop-shadow(1px 2px 0 #1e9eff);
+}
+
+.CartLink a img:active {
+  filter: drop-shadow(1px 2px 0 #fa1240);
 }

@@ -1,8 +1,18 @@
 .Logo img {
   width: 150px;
   height: max-content;
+  filter: drop-shadow(2px 1px 0 #ffffff80);
+  transition: 0.1s;
 }
 
 .Logo {
   display: contents;
+}
+
+.Logo img:hover {
+  filter: drop-shadow(2px 1px 0 #1e9eff);
+}
+
+.Logo img:active {
+  filter: drop-shadow(2px 1px 0 #fa1240);
 }

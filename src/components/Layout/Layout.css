@@ -7,26 +7,29 @@
   display: flex;
   justify-content: space-between;
   padding: 5px 0;
+  align-items: center;
 }
 
 .Layout .header-bottom .auth button {
-  padding: 12px;
+  padding: 13px;
   font-size: 18px;
-  border-radius: 15px;
-  color: #dddddd;
+  border-radius: 10px;
+  border: none;
   background-color: transparent;
-  border: 2px solid #dddddd;
-  box-shadow: inset 5px 5px 20px #dddddd25, inset -5px -5px 20px #dddddd25;
+  color: #dedede;
+  box-shadow: inset 1px 1px 5px white, -2px -2px 1px white, 1px 1px 1px white;
+  transition: 0.2s;
+  margin: 0;
 }
 
 .Layout .header-bottom .auth button:hover {
   color: #1e9eff;
-  border: 2px solid #1e9eff;
-  box-shadow: inset 5px 5px 20px #1e9eff25, inset -5px -5px 20px #1e9eff25;
+  box-shadow: inset 1px 1px 5px #1e9eff, -2px -2px 1px #1e9eff,
+    1px 1px 3px #0000ff;
 }
 
 .Layout .header-bottom .auth button:active {
   color: #fa1240;
-  border: 2px solid #fa1240;
-  box-shadow: inset 5px 5px 20px #fa124025, inset -5px -5px 20px #fa124025;
+  box-shadow: inset 2px 2px 7px #fa1240, -2px -2px 1px #fa1240,
+    1px 1px 5px #f11919;
 }
