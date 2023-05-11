@@ -12,3 +12,11 @@
   color: #1e9eff;
   text-decoration: underline;
 }
+
+.Auth {
+  position: absolute;
+}
+
+.Auth.active {
+  position: relative;
+}

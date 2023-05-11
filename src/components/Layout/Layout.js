@@ -8,6 +8,12 @@ import "./Layout.css";
 
 export default function Layout(props) {
   const { user } = useContext(AppContext);
+
+  function AddClassClick() {
+    const auth = document.querySelector(".Auth");
+    auth.classList.toggle("active");
+  }
+
   return (
     <div className="Layout">
       <header>
@@ -16,7 +22,7 @@ export default function Layout(props) {
         </div>
         <div className="header-bottom">
           <Logo />
-          <div className="auth">
+          <div className="auth" onClick={AddClassClick}>
             {!user ? (
               <button onClick={logIn} className="signin">
                 Sign in
