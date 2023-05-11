@@ -24,7 +24,7 @@ export default function Layout(props) {
             ) : null}
             {user ? (
               <button onClick={logOut} className="signout">
-                Sign out:
+                Sign out
               </button>
             ) : null}
           </div>

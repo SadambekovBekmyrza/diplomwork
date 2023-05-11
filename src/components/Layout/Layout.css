@@ -20,6 +20,7 @@
   box-shadow: inset 1px 1px 5px white, -2px -2px 1px white, 1px 1px 1px white;
   transition: 0.2s;
   margin: 0;
+  cursor: pointer;
 }
 
 .Layout .header-bottom .auth button:hover {
