@@ -1,0 +1,12 @@
+.ProductList .product img {
+  width: 70%;
+}
+
+.ProductList {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.ProductList .product {
+  width: 33%;
+}

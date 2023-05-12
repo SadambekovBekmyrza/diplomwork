@@ -10,14 +10,16 @@ export default function CategoryList() {
 
   const output = categories.map((category) => (
     <li key={category.id} className="nav-links">
-      <div>
-        <img
-          src={category.icon}
-          alt={category.name}
-          className="category-icon"
-        />
-        <NavLink to={`/categories/${category.slug}`}>{category.name}</NavLink>
-      </div>
+      <NavLink to={`/categories/${category.slug}`}>
+        <div>
+          <img
+            src={category.icon}
+            alt={category.name}
+            className="category-icon"
+          />
+          <NavLink to={`/categories/${category.slug}`}>{category.name}</NavLink>
+        </div>
+      </NavLink>
       <DeleteCategory category={category} />
     </li>
   ));
