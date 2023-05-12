@@ -41,3 +41,9 @@
     1px 1px 5px #f11919;
   background: linear-gradient(135deg, #202025, #202025, #fa124055);
 }
+
+.Layout footer {
+  background-color: #202025;
+  color: white;
+  padding: 25px 35px;
+}

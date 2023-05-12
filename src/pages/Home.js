@@ -1,9 +1,9 @@
 import "./pages.css";
 import headerimg from ".././assets/header-img-1.jpg";
-import homeimg1 from ".././assets/home-1.jpg";
-import homeimg2 from ".././assets/home-2.jpg";
-import homeimg3 from ".././assets/home-3.jpg";
-import homeimg4 from ".././assets/home-4.jpg";
+import homeimg1 from ".././assets/home-1.png";
+import homeimg2 from ".././assets/home-2.png";
+import homeimg3 from ".././assets/home-3.png";
+import homeimg4 from ".././assets/home-4.png";
 
 export default function Home() {
   return (
@@ -37,26 +37,57 @@ export default function Home() {
         Start exploring our selection today and find your next favorite puzzle!
       </p>
       <section className="goods">
+        <hr />
         <h2>We sell</h2>
-        <div>
+        <div className="cards">
           <div>
-            <h4>Rubik's Cube</h4>
             <img src={homeimg1} alt="" />
+            <h4>Rubik's Cube</h4>
           </div>
           <div>
-            <h4>Chess</h4>
             <img src={homeimg2} alt="" />
+            <h4>Chess</h4>
           </div>
           <div>
-            <h4>Puzzle</h4>
             <img src={homeimg3} alt="" />
+            <h4>Puzzle</h4>
           </div>
           <div>
-            <h4>Yo-Yo</h4>
             <img src={homeimg4} alt="" />
+            <h4>Yo-Yo</h4>
           </div>
         </div>
-        <h2>and much more</h2>
+        <hr />
+      </section>
+      <section className="learnMore">
+        <h1>And much more</h1>
+        <p>
+          The crested honey buzzard (Pernis ptilorhynchus), also known as the
+          Oriental honey buzzard, is a bird of prey in the family Accipitridae.
+          Its size ranges from 57 to 60 centimetres (22 to 24 in). The name is
+          derived from its diet, which consists mainly of the larvae of bees and
+          wasps, extracted from honeycombs. It has several adaptations for this
+          diet, including an elongated head for foraging on underground nests
+          and a groove in the tongue for feeding on honey.
+        </p>
+        <div>
+          <h3>Ajnckskcd</h3>
+          <ul>
+            <li>bla</li>
+            <li>bla</li>
+            <li>blA</li>
+            <li>bla</li>
+          </ul>
+        </div>
+        <p>
+          {" "}
+          A mass of short, dense feathers on the head and neck protect against
+          stinging attacks by social wasps. The crested honey buzzard is a
+          year-round resident in Southeast Asia and the Indian subcontinent.
+          Some birds migrate to Siberia and Japan during the summer for
+          breeding. This crested honey buzzard was photographed in Mudumalai
+          National Park, India
+        </p>
       </section>
     </div>
   );
