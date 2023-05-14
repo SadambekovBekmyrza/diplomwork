@@ -23,9 +23,8 @@ export const AppContext = createContext({
   categories: [],
   products: [],
   orders: [],
-  // context corzina
-  cart: {}, // soderjimoe corzinci
-  setCart: () => {}, // izmenit soderjimoe corzinki
+  cart: {},
+  setCart: () => {},
 
   user: null,
 });
@@ -47,32 +46,10 @@ function App() {
 
   useEffect(() => {
     onCategoriesLoad(setCategories);
-    // getDocs(categoryCollection).then(({ docs }) => {
-    //   setCategories(
-    //     docs.map((doc) => ({
-    //       ...doc.data(),
-    //       id: doc.id,
-    //     }))
-    //   );
-    // });
+
     onProductsLoad(setProducts);
-    // getDocs(productsCollection).then(({ docs }) => {
-    //   setProducts(
-    //     docs.map((doc) => ({
-    //       ...doc.data(),
-    //       id: doc.id,
-    //     }))
-    //   );
-    // });
+
     onOredrsLoad(setOrders);
-    // getDocs(ordersCollection).then(({ docs }) => {
-    //   setOrders(
-    //     docs.map((doc) => ({
-    //       ...doc.data(),
-    //       id: doc.id,
-    //     }))
-    //   );
-    // });
 
     onAuthChange((user) => {
       if (user) {
