@@ -1,21 +1,26 @@
 .Nav .nav-list {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 5px 0;
+}
+
+.Nav .nav-list li {
+  margin: 0 12px;
 }
 
 .Nav .nav-list li a {
   text-transform: uppercase;
-  color: #dddddd;
+  color: white;
+  padding: 10px;
+  border-radius: 15px;
+  border: 1px solid transparent;
   transition: 0.3s;
 }
 
 .Nav .nav-list li a:focus {
-  color: #fa1240;
+  color: #ff004c;
+  border: 1px solid #ff004c;
 }
 
 .Nav .nav-list li a:hover {
-  color: #1e9eff;
-  text-decoration: underline;
+  color: #1ca5eb;
+  border: 1px solid #1ca5eb;
 }

@@ -1,22 +1,23 @@
-.Auth span a {
-  text-transform: uppercase;
-  color: #dddddd;
-  margin-right: 5px;
-}
-
-.Auth span a:focus {
-  color: #fa1240;
-}
-
-.Auth span a:hover {
-  color: #1e9eff;
-  text-decoration: underline;
+.Auth span a img {
+  width: 35px;
+  border-radius: 50%;
+  border: 2px solid #ff004c;
 }
 
 .Auth {
-  position: absolute;
+  display: flex;
+  align-items: center;
+  padding-top: 5px;
+}
+.Auth svg {
+  filter: drop-shadow(0 0 5px #ff004c50);
+  cursor: pointer;
 }
 
-.Auth.active {
-  position: relative;
+.Auth svg:hover {
+  fill: #1ca5eb;
+}
+
+.Auth span a img:hover {
+  border: 2px solid #1ca5eb;
 }

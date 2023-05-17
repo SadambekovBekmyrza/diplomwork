@@ -1,5 +1,4 @@
 import { NavLink } from "react-router-dom";
-import Auth from "../Auth/Auth.js";
 import "./Nav.css";
 
 export default function Nav() {
@@ -7,7 +6,9 @@ export default function Nav() {
     <nav className="Nav">
       <ul className="nav-list">
         <li>
-          <NavLink to="/">Home</NavLink>
+          <NavLink to="/" className="home">
+            Home
+          </NavLink>
         </li>
         <li>
           <NavLink to="/about">About</NavLink>
@@ -21,7 +22,6 @@ export default function Nav() {
         <li>
           <NavLink to="/category-list">Categories</NavLink>
         </li>
-        <Auth />
       </ul>
     </nav>
   );
