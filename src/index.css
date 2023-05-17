@@ -7,8 +7,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   min-height: 110vh;
-  background-color: #202025;
-  color: white;
 }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
@@ -20,4 +18,31 @@ code {
   font-family: "Varela Round", sans-serif;
   margin: 0;
   padding: 0;
+  letter-spacing: 1px;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+p {
+  font-size: 18px;
+}
+
+h2 {
+  font-size: 55px;
+}
+
+h3 {
+  font-size: 44px;
+}
+
+h4 {
+  font-size: 33px;
+}
+
+h5 {
+  font-size: 22px;
+}
+
+h6 {
+  font-size: 12px;
 }
