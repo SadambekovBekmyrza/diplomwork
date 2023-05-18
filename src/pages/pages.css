@@ -1,11 +1,12 @@
 .Home .header {
   background-image: url(../assets/fonHeader.jpg);
   background-repeat: no-repeat;
-  background-size: 1250px;
+  background-size: 100%;
   overflow: hidden;
 }
 .Home .header .veil {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   padding: 60px;
@@ -28,7 +29,6 @@
 .Home .header div svg {
   margin-top: -100px;
   width: 100%;
-  height: 100%;
   overflow: hidden;
   border-radius: 15px;
 }
@@ -63,13 +63,14 @@
   border-radius: 15px;
   background-image: url(.././assets/home1.jpg);
   animation-name: slide;
-  animation-duration: 8s;
+  animation-duration: 10s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   background-color: white;
   background-size: 520px;
   background-repeat: no-repeat;
   overflow: hidden;
+  box-shadow: 0 0 5px black;
 }
 
 @keyframes slide {
@@ -133,4 +134,140 @@
   99% {
     background-image: url(.././assets/home1.jpg);
   }
+}
+.AboutUs {
+  background-image: url(../assets/fon.avif);
+  background-size: 100%;
+}
+.AboutUs .box-1 {
+  padding: 40px;
+  background-color: white;
+}
+
+.AboutUs .box-1 div {
+  animation-name: transform;
+  animation-duration: 1s;
+}
+
+.AboutUs .box-1 h2 img {
+  width: 100px;
+  margin-right: 20px;
+  background-color: black;
+  padding: 15px;
+  border-radius: 15px;
+}
+
+.AboutUs h2 {
+  align-items: center;
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.AboutUs .box-2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 40px;
+  text-align: center;
+  background-color: #adadadee;
+}
+
+.AboutUs .box-2 .card h3 {
+  color: crimson;
+  font-size: 50px;
+}
+
+.AboutUs .box-2 .card p {
+  color: #0052d6;
+  font-weight: 600;
+}
+
+.AboutUs .box-3 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 40px 40px 40px;
+  background-color: #adadadee;
+}
+
+.AboutUs .box-3 div img {
+  width: 355px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px black;
+  transition: 0.3s;
+}
+
+.AboutUs .box-4 {
+  background-color: #adadadee;
+  padding: 0 40px 40px 40px;
+}
+
+.AboutUs .box-4 h2 {
+  display: flex;
+  align-items: center;
+}
+
+.AboutUs .box-4 h2 img {
+  width: 100px;
+  margin-right: 20px;
+  background-color: white;
+  padding: 15px;
+  border-radius: 15px;
+}
+
+.AboutUs .box-4 div {
+  padding-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.AboutUs .box-4 div img {
+  border-radius: 15px;
+  width: 31%;
+  min-width: 20%;
+}
+
+.AboutUs .box-4 p {
+  font-weight: 600;
+  font-size: 25px;
+}
+
+.AboutUs .box-5 {
+  padding: 40px;
+  background-color: white;
+}
+
+.AboutUs .box-5 div {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.AboutUs .box-6 {
+  padding: 0 40px 40px 40px;
+  background-color: white;
+}
+
+.AboutUs .box-6 div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 40px;
+  align-items: center;
+}
+
+.AboutUs .box-6 div a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 600;
+  font-size: 20px;
+  color: black;
+}
+
+.AboutUs .box-6 div a img {
+  margin-bottom: 10px;
 }
