@@ -1,4 +1,5 @@
 import { useContext } from "react";
+
 import "./AddToCart.css";
 import { AppContext } from "../../App";
 export default function AddToCart({ product }) {

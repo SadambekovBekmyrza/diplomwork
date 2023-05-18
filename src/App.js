@@ -18,7 +18,6 @@ import ThankYou from "./pages/ThankYou";
 import Orders from "./pages/Orders";
 import CategoryListLink from "./pages/CategoryListLink";
 import DeliveryPayment from "./pages/DeliveryPayment";
-
 export const AppContext = createContext({
   categories: [],
   products: [],
