@@ -24,3 +24,54 @@
   color: #1ca5eb;
   border: 1px solid #1ca5eb;
 }
+
+.menu {
+  background-color: white;
+  width: 100%;
+  padding: 15px 20px;
+  display: none;
+}
+
+.menu ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.menu ul li a {
+  color: black;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  transition: 0.3s;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.menu ul li a:hover {
+  color: white;
+  background-color: black;
+}
+
+.Nav .burger {
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  border-radius: 15px;
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  display: none;
+}
+
+.Nav .burger:hover ~ .menu {
+  display: block;
+}
+
+@media (max-width: 1225px) {
+  .Nav .nav-list {
+    display: none;
+  }
+  .Nav .burger {
+    display: flex;
+  }
+}

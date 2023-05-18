@@ -23,6 +23,7 @@ export default function Nav() {
           <NavLink to="/category-list">Categories</NavLink>
         </li>
       </ul>
+      <div className="burger">=</div>
     </nav>
   );
 }

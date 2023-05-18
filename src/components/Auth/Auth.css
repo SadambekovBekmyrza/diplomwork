@@ -8,6 +8,7 @@
   display: flex;
   align-items: center;
   padding-top: 5px;
+  margin-left: 10px;
 }
 .Auth svg {
   filter: drop-shadow(0 0 5px #ff004c50);

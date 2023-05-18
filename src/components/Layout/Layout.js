@@ -12,13 +12,15 @@ import icon4 from "../../assets/iconTik.webp";
 
 export default function Layout(props) {
   return (
-    <div className="container">
+    <div className="Container">
       <div className="Layout">
         <header>
           <Logo />
           <Nav />
-          <CartLink />
-          <Auth />
+          <div>
+            <CartLink />
+            <Auth />
+          </div>
         </header>
         <main>{props.children}</main>
         <footer>

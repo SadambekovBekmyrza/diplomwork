@@ -1,5 +1,5 @@
-.container {
-  max-width: 1550px;
+.Container {
+  max-width: 1300px;
   min-width: 300px;
   height: auto;
   margin: 0 auto;
@@ -16,6 +16,11 @@
   justify-content: space-between;
   padding: 20px 40px;
   background-color: #171b20;
+}
+
+.Layout header div {
+  display: flex;
+  align-items: center;
 }
 
 @keyframes transform {
