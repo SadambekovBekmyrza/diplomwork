@@ -61,9 +61,9 @@ export default function AboutUs() {
       </section>
       <section className="box-3">
         <div>
-          <div>
-            <img src={img2} alt="img"></img>
-          </div>
+          <img src={img2} alt="img"></img>
+        </div>
+        <div>
           <img src={img1} alt="img"></img>
         </div>
         <div>
