@@ -3,6 +3,7 @@
   align-items: center;
   font-size: 17px;
   color: #0389e8;
+  filter: drop-shadow(0 1px 0 white);
 }
 
 .CartLink a img {
@@ -12,4 +13,12 @@
 
 .CartLink a span {
   padding-top: 2px;
+}
+
+.CartLink a:focus {
+  filter: drop-shadow(0 1px 0 #ff004c);
+}
+
+.CartLink a:hover {
+  filter: drop-shadow(0 1px 0 #0389e8);
 }
