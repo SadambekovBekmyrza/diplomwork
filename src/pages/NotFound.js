@@ -2,7 +2,8 @@ import "./pages.css";
 export default function NotFound() {
   return (
     <div className="NotFound">
-      <h1>! oops you must be lost !</h1>
+      <h1>404</h1>
+      <p>Oops! Something is wrong.</p>
     </div>
   );
 }
