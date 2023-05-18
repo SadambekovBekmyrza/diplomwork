@@ -3,9 +3,7 @@ import "./pages.css";
 export default function Home() {
   return (
     <div className="Home">
-      <section className="header">
-        <h1></h1>
-      </section>
+      <section className="header"></section>
     </div>
   );
 }
