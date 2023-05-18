@@ -12,6 +12,15 @@
   animation-duration: 1s;
 }
 
+@keyframes transform {
+  0% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 .AboutUs .box-1 h2 img {
   width: 100px;
   margin-right: 20px;
@@ -129,6 +138,14 @@
   font-weight: 600;
   font-size: 20px;
   color: black;
+  transition: 0.5s;
+  padding: 15px;
+  border-radius: 15px;
+}
+
+.AboutUs .box-6 div a:hover {
+  transform: scale(0.7);
+  box-shadow: inset 2px 3px 5px #d4d4d4, 5px 3px 10px #000000ba;
 }
 
 .AboutUs .box-6 div a img {
@@ -154,12 +171,12 @@
   font-size: 5em;
   text-align: center;
   font-weight: 300;
-  animation-name: transform;
+  animation-name: transform2;
   animation-iteration-count: infinite;
   animation-duration: 15s;
 }
 
-@keyframes transform {
+@keyframes transform2 {
   0% {
     transform: scale(0.5);
   }
@@ -253,4 +270,47 @@
     #0079fd 193px 193px, #0079fd 194px 194px, #0079fd 195px 195px,
     #0079fd 196px 196px, #0079fe 197px 197px, #0079fe 198px 198px,
     #0079fe 199px 199px, #007aff 200px 200px;
+}
+
+.Home .header .veil {
+  background-color: #141417c2;
+  padding: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Home .header {
+  background-image: url(./../assets/fonHeader.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  overflow: hidden;
+}
+
+.Home .header h1 {
+  font-size: 70px;
+  color: #ff004c;
+  filter: drop-shadow(3px 2px 0 white);
+  animation-name: transform;
+  animation-duration: 0.7s;
+}
+.Home .header h1 span {
+  color: #1ca5eb;
+}
+
+.Home .header svg {
+  margin-top: -100px;
+  border-radius: 15px;
+  animation-name: positionR;
+  animation-duration: 0.8s;
+}
+
+@keyframes positionR {
+  0% {
+    margin-right: -1000px;
+  }
+  100% {
+    margin-right: 0;
+  }
 }
