@@ -283,7 +283,6 @@
 
 .Home .header {
   background-image: url(./../assets/fonHeader.jpg);
-  background-repeat: no-repeat;
   background-size: 100%;
   overflow: hidden;
 }
@@ -303,6 +302,7 @@
   margin-top: -100px;
   border-radius: 15px;
   animation-name: positionR;
+  animation-iteration-count: 1;
   animation-duration: 0.8s;
 }
 
@@ -313,4 +313,57 @@
   100% {
     margin-right: 0;
   }
+}
+
+.Info .content-1 {
+  padding: 40px;
+}
+
+.Info .content-1 h3 {
+  margin: 40px 0;
+}
+
+.Info .content-1 .content-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Info .content-1 .content-card div {
+  width: 355px;
+}
+
+.Info .content-1 .content-card div h4 {
+  margin: 20px 0;
+}
+
+.Info .content-2 img {
+  width: 100%;
+}
+
+.Info .content-3 {
+  display: flex;
+  padding: 40px;
+}
+
+.Info .content-3 .content-3left {
+  margin-right: 40px;
+}
+
+.Info .content-3 .map {
+  width: 30%;
+  border-radius: 15px;
+  box-shadow: 0 0 10px #000000ba;
+}
+
+.Info .content-3 h4 {
+  margin-bottom: 40px;
+}
+
+.Info .content-3 h5 {
+  margin: 15px 0;
+}
+
+.Info .content-3 p {
+  font-weight: 600;
 }
