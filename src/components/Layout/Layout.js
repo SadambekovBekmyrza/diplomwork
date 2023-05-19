@@ -1,8 +1,8 @@
 import Logo from "../Logo/Logo";
 import CartLink from "../CartLink/CartLink.js";
+import Auth from "../Auth/Auth";
 import Nav from "../Nav/Nav";
 import "./Layout.css";
-import Auth from "../Auth/Auth";
 import logo from "../../assets/logo.png";
 import { NavLink } from "react-router-dom";
 import icon1 from "../../assets/iconVK.webp";

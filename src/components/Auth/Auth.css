@@ -2,12 +2,12 @@
   width: 35px;
   border-radius: 50%;
   border: 2px solid #ff004c;
+  margin-top: 7px;
 }
 
 .Auth {
   display: flex;
   align-items: center;
-  padding-top: 5px;
   margin-left: 10px;
 }
 .Auth svg {

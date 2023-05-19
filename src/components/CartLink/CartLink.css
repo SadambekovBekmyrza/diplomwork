@@ -1,4 +1,4 @@
-.CartLink a {
+.cartlink {
   display: flex;
   align-items: center;
   font-size: 17px;
@@ -6,19 +6,20 @@
   filter: drop-shadow(0 1px 0 white);
 }
 
-.CartLink a img {
+.CartLink .cartlink img {
   width: 85px;
   transition: 0.2s;
 }
 
-.CartLink a span {
+.CartLink .cartlink span {
   padding-top: 2px;
+  color: #0389e8;
 }
 
-.CartLink a:focus {
+.CartLink .cartlink:focus {
   filter: drop-shadow(0 1px 0 #ff004c);
 }
 
-.CartLink a:hover {
+.CartLink .cartlink:hover {
   filter: drop-shadow(0 1px 0 #0389e8);
 }
