@@ -1,7 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import Layout from "./components/Layout/Layout";
 import Home from "./pages/Home";
-import Contacts from "./pages/Contacts";
 import Category from "./pages/Category";
 import NotFound from "./pages/NotFound";
 import AboutUs from "./pages/AboutUs";
@@ -17,7 +16,8 @@ import Cart from "./pages/Cart";
 import ThankYou from "./pages/ThankYou";
 import Orders from "./pages/Orders";
 import CategoryListLink from "./pages/CategoryListLink";
-import DeliveryPayment from "./pages/DeliveryPayment";
+import Info from "./pages/Info";
+
 export const AppContext = createContext({
   categories: [],
   products: [],
@@ -67,14 +67,13 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/cart" element={<Cart />} />
-            <Route path="/contacts" element={<Contacts />} />
-            <Route path="/delivery-payment" element={<DeliveryPayment />} />
             <Route path="/about" element={<AboutUs />} />
             <Route path="/categories/:slug" element={<Category />} />
             <Route path="/products/:slug" element={<Product />} />
             <Route path="/thank-you" element={<ThankYou />} />
             <Route path="/orders" element={<Orders />} />
             <Route path="/category-list" element={<CategoryListLink />} />
+            <Route path="/info" element={<Info />} />
 
             <Route path="*" element={<NotFound />} />
           </Routes>
