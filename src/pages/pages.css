@@ -7,11 +7,6 @@
   background-color: white;
 }
 
-.AboutUs .box-1 div {
-  animation-name: transform;
-  animation-duration: 1s;
-}
-
 @keyframes transform {
   0% {
     transform: scale(0.5);
@@ -159,11 +154,12 @@
   color: crimson;
   font-size: 100%;
   line-height: 1.5;
-  padding: 40px;
-  padding-bottom: 200px;
+  padding: 100px 40px;
   animation-name: color;
-  animation-duration: 15s;
+  animation-duration: 5s;
   animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  text-align: center;
 }
 
 .NotFound p {
@@ -192,15 +188,11 @@
   0% {
     color: crimson;
   }
-  25% {
-    color: black;
-  }
+
   50% {
     color: white;
   }
-  75% {
-    color: black;
-  }
+
   100% {
     color: crimson;
   }
@@ -273,7 +265,7 @@
 }
 
 .Home .header .veil {
-  background-color: #141417c2;
+  background-color: #141417be;
   padding: 40px;
   display: flex;
   flex-wrap: wrap;
@@ -282,20 +274,44 @@
 }
 
 .Home .header {
-  background-image: url(./../assets/fonHeader.jpg);
+  background-image: url(./../assets/fonHeader3.jpg);
   background-size: 100%;
   overflow: hidden;
 }
 
 .Home .header h1 {
   font-size: 70px;
-  color: #ff004c;
-  filter: drop-shadow(3px 2px 0 white);
-  animation-name: transform;
-  animation-duration: 0.7s;
 }
 .Home .header h1 span {
   color: #1ca5eb;
+}
+.animate-charcter {
+  background-image: linear-gradient(
+    -225deg,
+    blue 0%,
+    #1ca5eb 20%,
+    #ff004c 40%,
+    #ff004c 60%,
+    #1ca5eb 80%,
+    blue 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 25s linear infinite;
+  display: inline-block;
+  font-size: 190px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
 }
 
 .Home .header svg {
@@ -326,11 +342,15 @@
 .Info .content-1 .content-card {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  flex-wrap: wrap;
 }
 
 .Info .content-1 .content-card div {
   width: 355px;
+}
+.Info .content-1 .content-card div svg {
+  border: 4px solid crimson;
+  border-radius: 10px;
 }
 
 .Info .content-1 .content-card div h4 {
@@ -350,12 +370,6 @@
   margin-right: 40px;
 }
 
-.Info .content-3 .map {
-  width: 30%;
-  border-radius: 15px;
-  box-shadow: 0 0 10px #000000ba;
-}
-
 .Info .content-3 h4 {
   margin-bottom: 40px;
 }
@@ -364,6 +378,18 @@
   margin: 15px 0;
 }
 
-.Info .content-3 p {
+.Info .content-3 .content-3right p {
   font-weight: 600;
+  color: #3a3a3a;
+}
+
+.Info .content-3 .map {
+  width: 700px;
+}
+
+.Info .content-3 .map iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 5px gray;
 }

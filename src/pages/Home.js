@@ -5,13 +5,20 @@ export default function Home() {
     <div className="Home">
       <section className="header">
         <div className="veil">
-          <h1>
-            Welcome to
-            <br />
-            online store
-            <br />
-            puzzle <span>Brain Life</span>
-          </h1>
+          <div className="container">
+            <div className="row">
+              <div className="col-md-12 text-center">
+                <h1 className="animate-charcter">
+                  {" "}
+                  Welcome
+                  <br />
+                  online store
+                  <br />
+                  puzzle Brain Life
+                </h1>
+              </div>
+            </div>
+          </div>
           <svg
             width="512"
             height="512"

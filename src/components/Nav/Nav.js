@@ -4,8 +4,10 @@ import Auth from "../Auth/Auth";
 import "./Nav.css";
 
 export default function Nav() {
+  const burger = document.querySelector(".burger");
   const burgerList = document.querySelector(".burger-list");
   function onClickBtn() {
+    burger.classList.toggle("active");
     burgerList.classList.toggle("block");
   }
   return (
@@ -44,7 +46,7 @@ export default function Nav() {
           <li>
             <NavLink to="/category-list">Categories</NavLink>
           </li>
-          <div>
+          <div className="headerRight">
             <CartLink />
             <Auth />
           </div>

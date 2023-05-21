@@ -13,6 +13,7 @@
   padding-right: 30px;
   padding-bottom: 5px;
   display: none;
+  margin-right: -12px;
 }
 
 .Nav .nav-list .burger::after {
@@ -62,13 +63,14 @@
   top: 109.7px;
   right: 0;
   position: absolute;
-  padding: 20px 40px;
+  padding: 40px 40px 0 40px;
   background-color: #171b20;
   display: flex;
   flex-direction: column;
   align-items: center;
   border-bottom-left-radius: 25px;
   display: none;
+  border: 1px solid #ffffff20;
 }
 
 .burger-list.block {
@@ -76,7 +78,7 @@
 }
 
 .Nav .burger-list li {
-  margin-bottom: 35px;
+  margin-bottom: 40px;
 }
 
 @media (max-width: 1040px) {
@@ -91,5 +93,16 @@
 @media (min-width: 1040px) {
   .burger-list.block {
     display: none;
+  }
+}
+
+.Nav .nav-list .burger-list .headerRight {
+  display: none;
+  padding-bottom: 40px;
+}
+
+@media (max-width: 590px) {
+  .Nav .nav-list .burger-list .headerRight {
+    display: flex;
   }
 }
