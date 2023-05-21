@@ -25,7 +25,7 @@ export default function AboutUs() {
       <section className="box-1">
         <div>
           <h2>
-            <img src={logo} alt="logo" />
+            <img src={logo} alt="logo" className="logonone" />
             About US
           </h2>
           <p>
@@ -72,7 +72,7 @@ export default function AboutUs() {
       </section>
       <section className="box-4">
         <h2>
-          <img src={Logo} alt="logo" />
+          <img src={Logo} alt="logo" className="logonone" />
           Where are we?
         </h2>
         <p>
