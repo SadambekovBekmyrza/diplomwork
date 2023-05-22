@@ -362,10 +362,15 @@
 .Info .content-1 .content-card div svg {
   border: 4px solid crimson;
   border-radius: 10px;
+  margin-top: 20px;
 }
 
 .Info .content-1 .content-card div h4 {
   margin: 20px 0;
+}
+
+.Info .content-1 .content-card .card-4 {
+  display: none;
 }
 
 .Info .content-2 img {
@@ -492,6 +497,9 @@
   .Info .content-4 {
     display: block;
   }
+  .Info .content-1 .content-card div {
+    margin: 0 auto;
+  }
 }
 
 @media (max-width: 600px) {
@@ -520,7 +528,7 @@
     padding: 20px;
   }
   .AboutUs .box-3 {
-    padding: 0 5px 0 5px;
+    padding: 20px 5px 0 5px;
   }
   .AboutUs .box-4 {
     padding: 20px;
@@ -546,12 +554,18 @@
   .Info h3 {
     font-size: 33px;
   }
+  .Info .content-3 {
+    flex-direction: column;
+  }
 }
 @media (max-width: 415px) {
   .AboutUs .box-5 div img:nth-child(5) {
     display: none;
   }
-  .Info .content-3 {
-    flex-direction: column;
+}
+
+@media (max-width: 1160px) {
+  .Info .content-1 .content-card .card-4 {
+    display: block;
   }
 }

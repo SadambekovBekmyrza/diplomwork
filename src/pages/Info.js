@@ -54,11 +54,30 @@ export default function Info() {
             >
               <path d="M481 1027 346 896H160V710L26 576l134-134V256h186l135-134 133 134h186v186l134 134-134 134v186H614l-133 131Zm0-452Zm0 368 107.917-107H740V685l109-109-109-109V316H589L481 207 371 316H220v151L111 576l109 109v151h150l111 107ZM363 746l117-71 117 71-31-133 104-90-137-11-53-126-53 126-137 11 104 90-31 133Z" />
             </svg>
-            <h4>Russian Post</h4>
+            <h4>Secure packaging</h4>
             <p>
-              Delivery of the order occurs to your post office. Orders are
-              collected and sent within 1-2 working days from the date of
-              payment and confirmation of the order.
+              We understand the importance of keeping your puzzles in pristine
+              condition. Each puzzle carefully packaged in sturdy materials to
+              protect against any potential damage during transit. We take great
+              care ensure that your puzzle arrives in perfect shape.
+            </p>
+          </div>
+          <div className="card-4">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="60"
+              viewBox="0 96 960 960"
+              width="60"
+              fill="crimson"
+            >
+              <path d="M160 896v-94q0-38 19-65t49-41q67-30 128.5-45T480 636q27.5 0 55 3t55 9v59q-28-6-55-8.5t-55-2.5q-57 0-110.5 12T252 750q-14 7-23 21.5t-9 30.5v34h370v60H160Zm60-60h370-370Zm260-261q-66 0-108-42t-42-108q0-66 42-108t108-42q66 0 108 42t42 108q0 66-42 108t-108 42Zm0-60q39 0 64.5-25.5T570 425q0-39-25.5-64.5T480 335q-39 0-64.5 25.5T390 425q0 39 25.5 64.5T480 515Zm0-90Zm250 593V846h-80V626h214l-80 160h79l-133 232Z" />
+            </svg>
+            <h4>Fast delivery</h4>
+            <p>
+              Fast and Reliable Shipping: We partner with trusted shipping
+              carriers to deliver your puzzles swiftly and securely to your
+              doorstep. Our team works diligently to process and dispatch your
+              orders as quickly as possible, ensuring minimal waiting time.
             </p>
           </div>
         </div>
