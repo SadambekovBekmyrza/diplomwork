@@ -5,9 +5,11 @@ import "./pages.css";
 export default function Cart() {
   return (
     <div className="Cart">
-      <h1>Cart</h1>
-      <CartList />
-      <OrderForm />
+      <div className="vayl">
+        <h1>Cart</h1>
+        <CartList />
+        <OrderForm />
+      </div>
     </div>
   );
 }

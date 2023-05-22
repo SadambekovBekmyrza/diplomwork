@@ -1,0 +1,75 @@
+.OrderForm {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  padding: 50px;
+}
+
+.fon {
+  padding: 40px;
+  background-color: #171b20;
+  border-bottom: 1px solid #ffffff20;
+}
+
+.OrderForm label input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid white;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.OrderForm label input:focus {
+  border: none;
+}
+
+.OrderForm label span {
+  width: 80px;
+  display: block;
+  margin-top: 20px;
+  font-size: 20px;
+  color: white;
+}
+
+.OrderForm button {
+  width: 100px;
+  border: 2px solid white;
+  color: white;
+  background-color: transparent;
+  border-radius: 15px;
+  padding: 10px;
+  cursor: pointer;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.OrderForm button:hover {
+  border: 2px solid #1ca5eb;
+  color: #1ca5eb;
+}
+
+.OrderForm button:active {
+  border: 2px solid #ff004c;
+  color: #ff004c;
+}
+
+.fon .border1 {
+  margin: 0 auto;
+  width: 50%;
+  border: 1px solid white;
+  padding: 5px;
+  border-radius: 65% 35% 80% 20% / 30% 70% 30% 70%;
+}
+
+.fon .border2 {
+  border: 1px solid white;
+  padding: 3px;
+  border-radius: 45% 55% 85% 15% / 25% 65% 35% 75%;
+}
+
+.fon .border3 {
+  border: 1px solid white;
+  padding: 1px;
+  border-radius: 25% 75% 65% 35% / 50% 35% 65% 50%;
+}
