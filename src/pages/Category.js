@@ -18,8 +18,10 @@ export default function Category() {
 
   return (
     <div className="Category">
-      <h1>{category.name}</h1>
-      <ProductList category={category} />
+      <div className="vayl">
+        <h1>{category.name}</h1>
+        <ProductList category={category} />
+      </div>
     </div>
   );
 }
