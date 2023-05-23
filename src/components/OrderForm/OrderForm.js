@@ -4,6 +4,7 @@ import { ordersCollection } from "../../firebase";
 import { useContext } from "react";
 import { AppContext } from "../../App";
 import { useNavigate } from "react-router";
+import CanvasParticleAnimation from "../CanvasParticleAnimation";
 
 export default function OrderForm() {
   const { cart, setCart, user } = useContext(AppContext);
@@ -33,29 +34,26 @@ export default function OrderForm() {
       setCart({});
     });
   }
+  //
 
   return (
     <div className="fon">
-      <div className="border1">
-        <div className="border2">
-          <div className="border3">
-            <form className="OrderForm" onSubmit={onFormSubmit}>
-              <h4>Create an order</h4>
-              <label>
-                <span>Name:</span> <input type="text" name="name" required />
-              </label>
-              <label>
-                <span>Phone:</span> <input type="tel" name="phone" required />
-              </label>
-              <label>
-                <span>Address:</span>{" "}
-                <input type="text" name="address" required />
-              </label>
-              <button>Submit</button>
-            </form>
-          </div>
-        </div>
+      <div className="canvas">
+        <CanvasParticleAnimation />
       </div>
+      <form className="OrderForm" onSubmit={onFormSubmit}>
+        <h5>Create an order</h5>
+        <label>
+          <span>Name:</span> <input type="text" name="name" required />
+        </label>
+        <label>
+          <span>Phone:</span> <input type="tel" name="phone" required />
+        </label>
+        <label>
+          <span>Address:</span> <input type="text" name="address" required />
+        </label>
+        <button>Submit</button>
+      </form>
     </div>
   );
 }

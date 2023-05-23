@@ -1,10 +1,15 @@
+import { NavLink } from "react-router-dom";
 import "./pages.css";
+import CanvasAnimation from "../components/CanvasAnimation";
 
 export default function Home() {
   return (
     <div className="Home">
       <section className="header">
         <div className="veil">
+          <div className="canvas">
+            <CanvasAnimation />
+          </div>
           <div className="container">
             <div className="row">
               <div className="col-md-12 text-center">
@@ -526,6 +531,40 @@ export default function Home() {
               </path>
             </defs>
           </svg>
+        </div>
+      </section>
+      <section className="slider-content">
+        <div id="slider-wrapper">
+          <div className="inner-wrapper">
+            <input
+              defaultChecked
+              type="radio"
+              name="slide"
+              className="control"
+              id="Slide1"
+            />
+            <label htmlFor="Slide1" id="s1"></label>
+            <input type="radio" name="slide" className="control" id="Slide2" />
+            <label htmlFor="Slide2" id="s2"></label>
+            <input type="radio" name="slide" className="control" id="Slide3" />
+            <label htmlFor="Slide3" id="s3"></label>
+            <input type="radio" name="slide" className="control" id="Slide4" />
+            <label htmlFor="Slide4" id="s4"></label>
+            <div className="overflow-wrapper">
+              <NavLink className="slide" to="#">
+                <img src="http://placehold.it/940x470" alt="Slide 1" />
+              </NavLink>
+              <NavLink className="slide" to="#">
+                <img src="http://placehold.it/940x470" alt="Slide 2" />
+              </NavLink>
+              <NavLink className="slide" to="#">
+                <img src="http://placehold.it/940x470" alt="Slide 3" />
+              </NavLink>
+              <NavLink className="slide" to="#">
+                <img src="http://placehold.it/940x470" alt="Slide 4" />
+              </NavLink>
+            </div>
+          </div>
         </div>
       </section>
     </div>

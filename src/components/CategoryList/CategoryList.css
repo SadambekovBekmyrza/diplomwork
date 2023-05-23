@@ -44,3 +44,9 @@
 .CategoryList .nav .nav-links:active {
   box-shadow: inset 0 0 10px black;
 }
+
+@media (max-width: 320px) {
+  .CategoryList {
+    padding: 20px;
+  }
+}

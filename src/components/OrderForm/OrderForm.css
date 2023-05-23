@@ -1,27 +1,51 @@
 .OrderForm {
-  width: 100%;
+  width: 70%;
   display: flex;
   flex-direction: column;
   color: white;
-  padding: 50px;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  background-color: #171b20;
+  position: relative;
+}
+
+.fon .canvas canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.fon .canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .fon {
+  width: 100%;
   padding: 40px;
   background-color: #171b20;
   border-bottom: 1px solid #ffffff20;
+  position: relative;
 }
 
 .OrderForm label input {
   background-color: transparent;
   border: none;
   border-bottom: 2px solid white;
+  border-top: 2px solid white;
   padding: 10px;
   border-radius: 15px;
 }
 
 .OrderForm label input:focus {
   border: none;
+  border: 2px solid white;
 }
 
 .OrderForm label span {
@@ -52,24 +76,4 @@
 .OrderForm button:active {
   border: 2px solid #ff004c;
   color: #ff004c;
-}
-
-.fon .border1 {
-  margin: 0 auto;
-  width: 50%;
-  border: 1px solid white;
-  padding: 5px;
-  border-radius: 65% 35% 80% 20% / 30% 70% 30% 70%;
-}
-
-.fon .border2 {
-  border: 1px solid white;
-  padding: 3px;
-  border-radius: 45% 55% 85% 15% / 25% 65% 35% 75%;
-}
-
-.fon .border3 {
-  border: 1px solid white;
-  padding: 1px;
-  border-radius: 25% 75% 65% 35% / 50% 35% 65% 50%;
 }
