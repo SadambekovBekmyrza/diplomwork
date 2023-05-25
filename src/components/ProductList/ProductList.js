@@ -16,7 +16,10 @@ export default function ProductList({ category }) {
           <div className="productname">{product.name}</div>
         </NavLink>
 
-        <img src={product.picture} alt={product.name} />
+        <div className="product-img">
+          <div className="zavesa"></div>
+          <img src={product.picture} alt={product.name} />
+        </div>
 
         <div className="product-content">
           <span>{product.price} som</span>

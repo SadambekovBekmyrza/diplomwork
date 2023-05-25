@@ -13,8 +13,9 @@ export default function AddToCart({ product }) {
   }
   return (
     <div className="AddToCart">
-      <button onClick={onAddToCartClick}>Add to cart</button>
-      <div>{cart[product.id] ? cart[product.id] : 0}</div>
+      <button onClick={onAddToCartClick}>
+        +<div className="number">{cart[product.id] ? cart[product.id] : 0}</div>
+      </button>
     </div>
   );
 }
