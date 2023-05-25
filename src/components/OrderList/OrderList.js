@@ -18,7 +18,7 @@ export default function OrderList() {
       }
 
       return (
-        <div key={product.id}>
+        <div key={product.id} className="order-card">
           <img src={product.picture} alt={product.name} />
           {product.name}: {order.cart[productId]} X {product.price} som ={" "}
           {order.cart[productId] * product.price} som
@@ -31,7 +31,10 @@ export default function OrderList() {
         <div>Name: {order.name}</div>
         <div>Phone: {order.phone}</div>
         <div>Address: {order.address}</div>
-        <div>Cart: {cartOutput}</div>
+        <div className="order-cart-list">
+          <div>Cart:</div>{" "}
+          <div className="order-cart-list-content">{cartOutput}</div>
+        </div>
       </div>
     );
   });

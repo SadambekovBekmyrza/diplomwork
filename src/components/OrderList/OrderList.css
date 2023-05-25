@@ -1,0 +1,59 @@
+.OrderList {
+  padding: 0 40px 20px 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.OrderList .Order {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: inset 10px 10px 50px gray, 0 0 5px black;
+  background-color: gainsboro;
+  color: black;
+  margin-bottom: 20px;
+  padding: 15px;
+  transition: 0.5s;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.OrderList .Order .order-cart-list .order-cart-list-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.OrderList .Order .order-cart-list .order-card {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: inset 10px 10px 50px gray, 0 0 5px black;
+  background-color: gainsboro;
+  color: black;
+  margin-bottom: 20px;
+  padding: 15px;
+  transition: 0.5s;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.OrderList .Order .order-cart-list .order-card img {
+  width: 30%;
+  margin: 0 auto;
+  height: auto;
+  border-radius: 15px;
+  margin-bottom: 10px;
+  transition: 0.5s;
+}
+
+@media (max-width: 950px) {
+  .OrderList .Order .order-cart-list .order-card img {
+    width: 50%;
+  }
+}
+@media (max-width: 500px) {
+  .OrderList .Order .order-cart-list .order-card img {
+    width: 70%;
+  }
+}
