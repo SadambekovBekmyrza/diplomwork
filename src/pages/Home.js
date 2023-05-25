@@ -1,6 +1,10 @@
 import { NavLink } from "react-router-dom";
 import "./pages.css";
 import CanvasAnimation from "../components/CanvasAnimation";
+import slide1 from ".././assets/slide1.webp";
+import slide2 from ".././assets/slide2.webp";
+import slide3 from ".././assets/slide3.webp";
+import slide4 from ".././assets/slide4.webp";
 
 export default function Home() {
   return (
@@ -533,7 +537,7 @@ export default function Home() {
           </svg>
         </div>
       </section>
-      <section className="slider-content">
+      <section className="slider">
         <div id="slider-wrapper">
           <div className="inner-wrapper">
             <input
@@ -552,16 +556,36 @@ export default function Home() {
             <label htmlFor="Slide4" id="s4"></label>
             <div className="overflow-wrapper">
               <NavLink className="slide" to="#">
-                <img src="http://placehold.it/940x470" alt="Slide 1" />
+                <img src={slide1} alt="Slide 1" />
+                <h3 className="slide-title1">
+                  We have puzzles
+                  <br />
+                  for everyone
+                </h3>
               </NavLink>
               <NavLink className="slide" to="#">
-                <img src="http://placehold.it/940x470" alt="Slide 2" />
+                <img src={slide2} alt="Slide 2" />
+                <h3 className="slide-title2">
+                  Available
+                  <br />
+                  speed cube
+                </h3>
               </NavLink>
               <NavLink className="slide" to="#">
-                <img src="http://placehold.it/940x470" alt="Slide 3" />
+                <img src={slide3} alt="Slide 3" />
+                <h3 className="slide-title3">
+                  Best Mirror at
+                  <br />
+                  best price
+                </h3>
               </NavLink>
               <NavLink className="slide" to="#">
-                <img src="http://placehold.it/940x470" alt="Slide 4" />
+                <img src={slide4} alt="Slide 4" />
+                <h3 className="slide-title4">
+                  We will be
+                  <br />
+                  waiting for you
+                </h3>
               </NavLink>
             </div>
           </div>
