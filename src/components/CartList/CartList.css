@@ -1,79 +1,105 @@
 .CartList {
-  padding: 0 30px 30px 30px;
+  padding: 0 40px 20px 40px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
 .CartList .CartItem {
-  width: 30.5%;
-  border: 2px solid black;
-  padding: 20px;
-  margin: 15px;
+  width: 23.5%;
   border-radius: 15px;
-  background-color: dimgray;
+  box-shadow: inset 10px 10px 50px gray, 0 0 5px black;
+  background-color: gainsboro;
   color: black;
+  margin-bottom: 20px;
+  padding: 15px;
+  transition: 0.5s;
+}
+.CartList .CartItem:hover {
+  box-shadow: inset 5px 5px 30px gray, 5px 5px 15px #000000c0;
 }
 
-.CartList .CartItem img {
+.CartList .CartItem .cart-img {
   width: 100%;
-  border: 2px solid black;
+  height: auto;
+  overflow: hidden;
   border-radius: 15px;
+}
+
+.CartList .CartItem .cart-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  transition: 0.5s;
 }
 
 .CartList .CartItem .name {
-  padding: 10px;
-  border: 2px solid black;
-  text-align: center;
-  border-radius: 15px;
   margin-bottom: 5px;
   color: black;
+  font-weight: 600;
+  height: 40px;
+  padding: 0 5px;
+  transition: 0.2s;
 }
 
 .CartList .CartItem .cart-btn {
-  border: 2px solid black;
-  border-radius: 15px;
-  padding: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 10px 5px 0 5px;
+  font-weight: 600;
 }
 
 .CartList .CartItem .cart-btn svg:hover {
   fill: #ff004c;
 }
 
+.CartList .CartItem .cart-btn svg:active {
+  transition: 0.1s;
+  transform: translateY(3px);
+}
+
+.CartList .CartItem .cart-btn input:focus {
+  color: #ff004c;
+}
+
 .CartList .CartItem .cart-btn input {
-  border: 2px solid black;
-  border-radius: 10px;
-  padding: 5px;
-  width: 20%;
+  border: none;
+  background: transparent;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  padding: 10px;
+  border-radius: 25px;
+  font-weight: 600;
+  box-shadow: inset 3px 3px 20px #000000d0, 0 0 1px black;
+  transition: 0.3s;
+  width: 29%;
+  font-size: 15px;
+}
+.CartList .CartItem .name:hover {
+  color: #ff004c;
+}
+
+.CartList .CartItem .name:active {
+  transition: 0.1s;
+  transform: translateY(3px);
 }
 
 @media (max-width: 1135px) {
   .CartList .CartItem {
-    width: 46.3%;
+    width: 31.3%;
   }
 }
-@media (max-width: 887px) {
+@media (max-width: 780px) {
   .CartList .CartItem {
-    margin: 20px auto;
-    width: 60%;
+    width: 48%;
   }
 }
-@media (max-width: 640px) {
+@media (max-width: 555px) {
   .CartList .CartItem {
-    margin: 20px auto;
-    width: 100%;
+    margin: 0 auto;
+    width: 90%;
+    margin-bottom: 20px;
   }
-}
-
-.CartList .CartItem .name:hover {
-  color: #1ca5eb;
-  border: 2px solid #1ca5eb;
-}
-
-.CartList .CartItem .name:active {
-  color: #ff004c;
-  border: 2px solid #ff004c;
 }

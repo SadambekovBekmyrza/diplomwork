@@ -27,7 +27,9 @@ export default function CartList() {
         <NavLink to={"/products/" + product.slug}>
           <div className="name">{product.name}</div>
         </NavLink>
-        <img src={product.picture} alt={product.name} />
+        <div className="cart-img">
+          <img src={product.picture} alt={product.name} />
+        </div>
         <div className="cart-btn">
           <span>{cart[product.id] * product.price} som</span>
           <input
