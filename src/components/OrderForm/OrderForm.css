@@ -77,3 +77,8 @@
   border: 2px solid #ff004c;
   color: #ff004c;
 }
+
+.request h1 {
+  margin: 0;
+  padding-bottom: 20px;
+}

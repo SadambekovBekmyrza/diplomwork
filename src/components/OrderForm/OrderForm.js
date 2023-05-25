@@ -15,7 +15,11 @@ export default function OrderForm() {
   }
 
   if (!user) {
-    return "PLEASE LOGIN TO CREATE AN ORDER !";
+    return (
+      <div className="request">
+        <h1>PLEASE LOGIN TO CREATE AN ORDER !</h1>
+      </div>
+    );
   }
 
   function onFormSubmit(event) {
