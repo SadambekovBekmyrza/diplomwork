@@ -12,10 +12,14 @@ export default function Product() {
   }
   return (
     <div className="Product">
-      <h1>{product.name}</h1>
-      <img src={product.picture} alt={product.name} />
-      <span>{product.price}som</span>
-      <p>{product.description}</p>
+      <div>
+        <div className="product-card">
+          <h1>{product.name}</h1>
+          <img src={product.picture} alt={product.name} />
+          <span>{product.price}som</span>
+          <p>{product.description}</p>
+        </div>
+      </div>
     </div>
   );
 }
